@@ -1,0 +1,195 @@
+.container{
+    max-width: 1024px;
+    width:100%;
+    margin: 0 auto;
+    padding:50px 20px 20px 20px; 
+    box-sizing: border-box;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    margin: 0 10px 0 10px;
+    right: 0;
+    justify-content: center;
+ 
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Halant', serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.topitems {
+    color: maroon;
+    font-size: 20px;
+    margin: 50px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    
+   
+    
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+[class*=col-] {
+    flex-basis: 100%;
+
+}
+
+/* stylistic choice to make the profile pic a circle in a condensed window */
+.profile-img {
+    
+    width: 250px;
+    height: 250px;
+    display: block;
+    border-radius: 50%;
+    margin: 20px auto 20px auto;
+    width: 50%;
+    border:5px solid maroon;
+    padding: 5px;
+    background-color: white;
+    
+
+}
+
+/* These project-img settings specifically for half screen (mobile)
+    so the mobile screen doesn't have giant images aka width 100% */
+.project-img {
+    width: 70%;
+    height: 65%;
+    margin: 15px 0px 15px 0px;
+
+
+    
+}
+
+.tag {
+    display: inline-block;
+    border-radius: 5px;
+    margin: 5px 5px 5px 0px;
+    padding: 2px 4px 2px 4px;
+    color: white;
+
+}
+
+.technical {
+    background-color: #9FD4FF;
+
+}
+
+.app {
+    background-color: #FED9A4;
+
+}
+
+.consulting {
+    background-color: #98FB98;
+
+}
+
+.socialimpact {
+    background-color: #D7A9E3FF;
+
+}
+
+.nonprofit {
+    background-color: #FFED9D;
+
+}
+
+.proj_title {
+    text-align: center;
+}
+
+.image_container {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* settings for large screen */
+@media only screen and (min-width: 768px) {
+    .col-1 {flex-basis: 8.33%;} 
+    .col-2 {flex-basis: 16.66%;}
+    .col-3 {flex-basis: 25%;}
+    .col-4 {flex-basis: 33.33%;}
+    .col-5 {flex-basis: 41.66%;}
+    .col-6 {flex-basis: 50%;}
+    .col-7 {flex-basis: 58.33%;}
+    .col-8 {flex-basis: 66.66%;}
+    .col-9 {flex-basis: 75%;}
+    .col-10 {flex-basis: 83.33%;}
+    .col-11 {flex-basis: 91.66%;}
+    .col-12 {flex-basis: 100%;}
+
+    .row {
+        flex-direction: row;
+
+    }
+
+    .project-img {
+        width: 100%;
+        height: 80%;
+        margin: 15px;
+    
+    
+        
+    }
+
+    .profile-img {
+        border-radius: 20px;
+        width: 250px;
+        height: 250px;
+        border:5px solid maroon;
+        padding: 5px;
+        background-color: white;
+    
+    }
+
+
+    /* puts text in the center alignment of the profile pic in full screen mode */
+    #generalinfo {
+        margin-top: 80px;
+    }
+
+    #news .col-4 {
+        text-align: right;
+    }
+
+
+    .search input {
+        width:100%;
+      margin:0.5rem 0 0.5rem 0;
+      font-size: 0.9rem;
+      padding: 0.5rem;
+      border-radius: 1rem;
+      border: 1px solid #eeeeee;
+      padding-top: 10px;
+    }
+
+}
+
+
