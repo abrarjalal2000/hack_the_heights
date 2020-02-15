@@ -4,24 +4,57 @@
     margin: 0 auto;
     padding:50px 20px 20px 20px; 
     box-sizing: border-box;
-}
+    position: relative;
 
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-color: white;
-    position: fixed;
-    top: 0; 
-    width: 100%; 
-    margin: 0 10px 0 10px;
-    right: 0;
-    justify-content: center;
- 
-    
 }
+
+.text-block {
+  position: absolute;
+  top: 83px;
+  left: 5px;
+  right: 5px;
+  color: gold;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: 5px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 49%;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+  
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
 
 a {
     text-decoration: none;
@@ -33,6 +66,12 @@ body {
 
 h1 {
     font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    padding-top: 10px;
+   
 }
 
 
@@ -50,6 +89,8 @@ h1 {
 .row{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -62,13 +103,10 @@ h1 {
 /* stylistic choice to make the profile pic a circle in a condensed window */
 .profile-img {
     
-    width: 250px;
-    height: 250px;
-    display: block;
-    border-radius: 50%;
+    position: absolute;
+    top: 0px;
     margin: 20px auto 20px auto;
-    width: 50%;
-    border:5px solid maroon;
+    width: 100%;
     padding: 5px;
     background-color: white;
     
@@ -78,9 +116,12 @@ h1 {
 /* These project-img settings specifically for half screen (mobile)
     so the mobile screen doesn't have giant images aka width 100% */
 .project-img {
-    width: 70%;
-    height: 65%;
-    margin: 15px 0px 15px 0px;
+    position: absolute;
+    top: 0px;
+    margin: 20px auto 20px auto;
+    width: 100%;
+    padding: 5px;
+    background-color: white;
 
 
     
@@ -160,13 +201,14 @@ h1 {
     }
 
     .profile-img {
-        border-radius: 20px;
-        width: 250px;
-        height: 250px;
-        border:5px solid maroon;
+        position: absolute;
+        top:0px;
+        left:0px;
+        margin: 20px auto 20px auto;
+        width: 100%;
         padding: 5px;
         background-color: white;
-    
+      
     }
 
 
