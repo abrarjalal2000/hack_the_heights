@@ -235,6 +235,10 @@ h1 {
       border: 1px solid #eeeeee;
       padding-top: 10px;
     }
+    .submission {
+        text-align: center;
+        
+    }
 
 }
 
