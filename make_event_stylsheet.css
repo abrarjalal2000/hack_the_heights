@@ -88,6 +88,12 @@ body {
 
 h1 {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.h1left {
+    text-align: left;
+
 }
 
 
